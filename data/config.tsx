@@ -16,6 +16,7 @@ const siteConfig = {
   header: {
     links: [
       {
+        href: "#features",
         id: "features",
         label: "Features",
       },
@@ -24,6 +25,7 @@ const siteConfig = {
       //   label: 'Pricing',
       // },
       {
+        href: "#faq",
         id: "faq",
         label: "FAQ",
       },
@@ -32,6 +34,7 @@ const siteConfig = {
       //   href: '/login',
       // },
       {
+        href: "#releases",
         id: "releases",
         label: "Releases",
         variant: "primary",

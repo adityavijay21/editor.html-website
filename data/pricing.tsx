@@ -9,7 +9,7 @@ export default {
       id: 'mac',
       title: 'MacOS Builds',
       isRecommended: true,
-      description: 'Required MacOS X and higher',
+      description: 'Requires MacOS X and higher.',
       price: 'Free',
       features: [
         {
@@ -47,7 +47,7 @@ export default {
     {
       id: 'windows',
       title: 'Windows Builds',
-      description: 'Require Windows10 and Higher.',
+      description: 'Requires Windows10+.',
       price: 'Free',
       isRecommended: true,
       features: [
@@ -93,13 +93,10 @@ export default {
       id: 'startup',
       title: 'Linux Builds',
       isRecommended: true,
-      description: 'Require Debian based Architecture.',
+      description: 'Requires Debian.',
       price: (
         <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
-          </Text>
-          <Text>€499,-</Text>
+          <Text>Free</Text>
         </HStack>
       ),
       features: [
