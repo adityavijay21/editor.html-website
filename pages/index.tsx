@@ -79,8 +79,6 @@ Web Development with real-time live preview."
         <TestimonialsSection /> */}
 
         <PricingSection />
-        
-        
 
         <FaqSection />
       </Box>
@@ -106,28 +104,29 @@ const HeroSection: React.FC = () => {
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-
-                
                 Editor.html is a <Em>beginner-friendly,</Em>
-                <Br />cross-platform desktop app for learning and practicing <Br />{" "}
+                <Br />
+                cross-platform desktop app for learning and practicing <Br />{" "}
                 Web Development with real-time live preview.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
+              {/* <HStack pt="4" pb="12" spacing="8">
                 <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack>
+              </HStack> */}
 
-              <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup"
-                
+              <ButtonGroup pt="6" pb="12" spacing={4} alignItems="center">
+                <ButtonLink
+                  colorScheme="primary"
+                  size="lg"
+                  href="https://github.com/adityavijay21/editor.html/releases"
                 >
                   Download
                 </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="https://demo.saas-ui.dev"
+                  href="https://github.com/adityavijay21/editor.html"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -142,7 +141,7 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  Contribute to Project 
+                  Contribute to Project
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -157,9 +156,13 @@ const HeroSection: React.FC = () => {
             margin="0 auto"
           >
             <FallInPlace delay={1}>
-              <Box overflow="hidden" height="100%">
+              <Box
+                overflow="hidden"
+                height="100%"
+                sx={{ borderRadius: "10px" }}
+              >
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/Desktop.png"
                   layout="fixed"
                   width={1200}
                   height={762}
@@ -174,7 +177,7 @@ const HeroSection: React.FC = () => {
       </Container>
 
       <Features
-        id="benefits"
+        id="features"
         columns={[1, 2, 4]}
         iconSize={4}
         innerWidth="container.xl"
@@ -183,7 +186,8 @@ const HeroSection: React.FC = () => {
           {
             title: "Accessible",
             icon: FiSmile,
-            description: "Enjoy user-friendly, cross-platform compatibility for all skill levels.",
+            description:
+              "Enjoy user-friendly, cross-platform compatibility for all skill levels.",
             iconPosition: "left",
             delay: 0.6,
           },
@@ -459,19 +463,12 @@ const PricingSection = () => {
   return (
     <Pricing {...pricing}>
       <Text p="8" textAlign="center" color="muted">
-      For previous builds, we recommend checking out the releases section on GitHub.
+        For previous builds, we recommend checking out the releases section on
+        GitHub.
       </Text>
     </Pricing>
   );
 };
-
-
-
-
-
-
-
-
 
 const FaqSection = () => {
   return <Faq {...faq} />;
