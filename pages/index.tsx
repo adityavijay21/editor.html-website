@@ -79,8 +79,6 @@ Web Development with real-time live preview."
         <TestimonialsSection /> */}
 
         <PricingSection />
-        
-        
 
         <FaqSection />
       </Box>
@@ -106,10 +104,9 @@ const HeroSection: React.FC = () => {
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-
-                
                 Editor.html is a <Em>beginner-friendly,</Em>
-                <Br />cross-platform desktop app for learning and practicing <Br />{" "}
+                <Br />
+                cross-platform desktop app for learning and practicing <Br />{" "}
                 Web Development with real-time live preview.
               </FallInPlace>
             }
@@ -120,9 +117,7 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup"
-                
-                >
+                <ButtonLink colorScheme="primary" size="lg" href="/signup">
                   Download
                 </ButtonLink>
                 <ButtonLink
@@ -142,7 +137,7 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  Contribute to Project 
+                  Contribute to Project
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -174,7 +169,7 @@ const HeroSection: React.FC = () => {
       </Container>
 
       <Features
-        id="benefits"
+        id="features"
         columns={[1, 2, 4]}
         iconSize={4}
         innerWidth="container.xl"
@@ -183,7 +178,8 @@ const HeroSection: React.FC = () => {
           {
             title: "Accessible",
             icon: FiSmile,
-            description: "Enjoy user-friendly, cross-platform compatibility for all skill levels.",
+            description:
+              "Enjoy user-friendly, cross-platform compatibility for all skill levels.",
             iconPosition: "left",
             delay: 0.6,
           },
@@ -459,19 +455,12 @@ const PricingSection = () => {
   return (
     <Pricing {...pricing}>
       <Text p="8" textAlign="center" color="muted">
-      For previous builds, we recommend checking out the releases section on GitHub.
+        For previous builds, we recommend checking out the releases section on
+        GitHub.
       </Text>
     </Pricing>
   );
 };
-
-
-
-
-
-
-
-
 
 const FaqSection = () => {
   return <Faq {...faq} />;

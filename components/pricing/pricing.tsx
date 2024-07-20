@@ -36,7 +36,7 @@ export const Pricing: React.FC<PricingProps> = (props) => {
   const { children, plans, title, description, ...rest } = props;
 
   return (
-    <Section id="pricing" pos="relative" {...rest}>
+    <Section id="releases" pos="relative" {...rest}>
       <BackgroundGradient height="100%" />
       <Box zIndex="2" pos="relative">
         <SectionTitle title={title} description={description}></SectionTitle>
@@ -76,10 +76,8 @@ export const Pricing: React.FC<PricingProps> = (props) => {
               <ButtonLink colorScheme="primary" {...plan.action2}>
                 {plan.action2.label || "Download"}
               </ButtonLink>
-
-
             </PricingBox>
-          ))} 
+          ))}
         </SimpleGrid>
 
         {children}
