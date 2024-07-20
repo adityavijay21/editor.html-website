@@ -23,7 +23,6 @@ export interface PricingPlan {
   description: React.ReactNode;
   price: React.ReactNode;
   features: Array<PricingFeatureProps | null>;
-  action: ButtonLinkProps & { label?: string };
   isRecommended?: boolean;
 }
 
@@ -47,7 +46,7 @@ export const Pricing: React.FC<PricingProps> = (props) => {
               key={plan.id}
               title={plan.title}
               description={plan.description}
-              // price={plan.price}
+              price={plan.price}
               sx={
                 plan.isRecommended
                   ? {
@@ -69,13 +68,19 @@ export const Pricing: React.FC<PricingProps> = (props) => {
                   )
                 )}
               </PricingFeatures> */}
-              <ButtonLink colorScheme="primary" {...plan.action1}>
-                {plan.action1.label || "Download"}
+              <ButtonLink
+                colorScheme="primary"
+                href="https://github.com/adityavijay21/editor.html/releases"
+              >
+                {"Download"}
               </ButtonLink>
 
-              <ButtonLink colorScheme="primary" {...plan.action2}>
-                {plan.action2.label || "Download"}
-              </ButtonLink>
+              {/* <ButtonLink
+                colorScheme="primary"
+                href="https://github.com/adityavijay21/editor.html/releases"
+              >
+                {"Download"}
+              </ButtonLink> */}
             </PricingBox>
           ))}
         </SimpleGrid>
